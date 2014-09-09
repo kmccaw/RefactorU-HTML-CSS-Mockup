@@ -6,16 +6,16 @@ body {
 {
 	position: relative;
 	top: 20px;
-	left: 20%;
+	left: 15%;
 	width: 60%;
-	height: 800px;
+	min-width: 300px;
 	background-color: #ECF0F1;
 }
 
 .banner {
 	position: relative;
 	padding: 0px;
-	height: 200px;
+	height: 170px;
 	background-color: #2ECC71;
 	border-bottom: 10px solid #27AE60;
 	margin: 0px;
@@ -49,15 +49,38 @@ body {
 	float: right;
 	display: inline-block;
 	padding-right: 15px;
-	color: white;
 }
 
+.nav-bar li a {
+	color: white;
+	text-decoration: none;
+}
+
+.nav-bar li:hover a {
+	color: yellow;
+}
+
+article h2 {
+	margin: 20px;
+}
+
+article h3 {
+	margin: 20px;
+	padding: 10px;
+
+	border-bottom: 1px solid gray;
+}
+article p {
+	margin: 0px 40px 0 40px;
+}
+
+
 .nav-box {
-	position: static;
+	position: fixed;
 	background-color: #ECF0F1;
 	border-bottom: 3px solid #444444;
 	width: 170px;
 	height: 197px;
-	left: 83%;
-	top: 40%;
+	left: 76%;
+	top: 25%;
 }
