@@ -1,15 +1,30 @@
 body {
-	background-color: #7F8C8D
+	background-color: #7F8C8D;
+}
+
+a {
+	text-decoration: none;
+	color: #D35400;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 .main-column
 {
 	position: relative;
+	overflow: hidden;
 	top: 20px;
 	left: 15%;
 	width: 60%;
 	min-width: 300px;
 	background-color: #ECF0F1;
+}
+
+.main-column article {
+	overflow: hidden;
+	padding: 10px 20px 20px 20px;
 }
 
 .banner {
@@ -60,20 +75,174 @@ body {
 	color: yellow;
 }
 
-article h2 {
-	margin: 20px;
+.main-column h2 {
+	margin: 15px 0px 5px 20px;
 }
 
-article h3 {
-	margin: 20px;
+.main-column article h3 {
 	padding: 10px;
-
-	border-bottom: 1px solid gray;
+	margin: 10px 0px 10px 0px;
+	border-bottom: 1px solid #999999;
 }
-article p {
-	margin: 0px 40px 0 40px;
+.main-column article p {
+	margin: 10px 20px 10px 20px;
 }
 
+.main-column article table {
+	margin: 10px 0px 10px 0px;
+	width: 100%;
+}
+
+.main-column article table td {
+	border: 1px solid #999999;
+	padding: 7px 10px 7px 10px;
+	text-align: left;
+	visibility: middle;
+}
+
+.main-column article table th {
+	border: 1px solid #999999;
+	background-color: #BDC3C7;
+	padding: 7px 10px 7px 10px;
+	text-align: left;
+}
+
+.main-column article > img {
+	width: 100%;
+	margin: auto;
+}
+
+.blue-button {
+	display: inline-block;
+	padding: 6px 20px 6px 20px;
+	margin: 2px;
+	background-color: #3498DB;
+	color: #FFF;
+	text-decoration: none;
+}
+
+.blue-button:hover {
+	background-color: #D35400;
+}
+
+.verbatim-code {
+	font-family: "Courier New", Courier, monospace;
+	background-color: #BDC3C7;
+	padding: 20px 35px 20px 35px;
+}
+
+.paragraph-list strong {
+	margin: 0px;
+	padding: 0px;
+}
+
+ol.paragraph-list {
+	padding-left: 20px;
+}
+
+ol.paragraph-list > li > p {
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+}
+
+ol.paragraph-list > li {
+	margin-bottom: 10px;
+}
+
+.article-footer {
+	font-size: 0.75em;
+	color: #A09999;
+}
+
+.comment-form {
+	overflow: hidden;
+	text-align: right;
+	margin-bottom: 50px;
+}
+
+.comment-form input {
+	margin: 10px 35px 10px 5px;
+	width: 60%;
+}
+
+.comment-form fieldset {
+	position: relative;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+	border-color: #999999;
+	margin: 5px 20px 5px 20px;
+	overflow: hidden;
+}
+
+.comment-form legend {
+	text-align: left;
+	padding: 10px;
+	text-transform: uppercase;
+	color: #999999;
+	font-size: 0.75em;
+}
+
+.comment-content {
+	width: 90%;
+	height: 125px;
+	margin: auto;
+	display: block;
+}
+
+.submit-button {
+	width: 80%;
+	background-color: #C0392B;
+	color: white;
+	padding: 10px;
+	display: block;
+	margin: auto;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.user-response {
+	overflow: hidden;
+	padding: 10px;
+	margin: 10px;
+}
+
+.response-image {
+	width: 50px;
+	float: left;
+	margin-bottom: 5px;
+}
+
+.response-header {
+	float: left;
+	text-align: left;
+	margin-left: 10px;
+	padding: 5px;
+	display: block;
+}
+
+.response-author {
+	font-weight: bold;
+	display: block;
+	font-size: 1.2em
+}
+
+.response-time {
+	font-style: italic;
+	display: block;
+	font-size: 0.9em;
+	color: #999999;
+}
+
+.response-content {
+	clear: both;
+}
+
+.response-replies {
+	border-left: 1px solid #999999;
+	margin-left: 15px;
+}
 
 .nav-box {
 	position: fixed;
@@ -83,4 +252,21 @@ article p {
 	height: 197px;
 	left: 76%;
 	top: 25%;
+	padding-top: 10px;
+}
+
+.nav-box ul {
+	list-style-type: none;
+	padding: 5px 0px 5px 10px;
+	margin: 0px;
+}
+
+.nav-box-category {
+	font-weight: bold;
+}
+
+.nav-box-link a {
+	color: #444444;
+	font-weight: lighter;
+	font-size: 0.85em;
 }

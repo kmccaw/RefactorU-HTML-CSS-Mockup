@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Untitled</title>
+  <title>HTML/CSS Mockup RefactorU Exercise</title>
   <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="main.css">
 </head>
@@ -18,8 +18,8 @@
 				<li><a href="#">ABOUT US</a></li>
 			</ul>
 		</nav>
+		<h2>Article Title</h2>
 		<article>
-			<h2>Article Title</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -40,8 +40,30 @@
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			<table>
-				<thead></thead>
-				<tbody></tbody>
+				<thead>
+					<tr>
+						<th>What</th>
+						<th>Where</th>
+						<th>How</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>HTML</td>
+						<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo veritatis dolor, laborum ex esse rem repellat quisquam blanditiis officiis nisi dolorum deserunt cupiditate temporibus possimus delectus aliquid eveniet ea quia!</td>
+						<td><a href="#" class="blue-button">Go!</a></td>
+					</tr>
+					<tr>
+						<td>CSS</td>
+						<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet id corporis, delectus ducimus molestiae aspernatur esse!</td>
+						<td><a href="#" class="blue-button">Try!</a></td>
+					</tr>
+					<tr>
+						<td>JS</td>
+						<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea natus nemo architecto amet dolor nihil in blanditiis placeat.</td>
+						<td><a href="#" class="blue-button">View</a></td>
+					</tr>
+				</tbody>
 			</table>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -57,11 +79,13 @@
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			<div class="verbatim-code">
-				<!-- $('#myElement').click(function(){
-						console.log('Clicked!')
-						}); -->
+				<!--
+					$('#myElement').click(function(){
+					  console.log('Clicked!')
+					}); 
+				-->
 				&#36;&#40;&#39;&#35;myElement&#39;&#41;.click&#40;function&#40;&#41;&#123;<br>
-				console.log&#40;&#39;Clicked&#33;&#39;&#41;<br>
+				&nbsp;&nbsp;console.log&#40;&#39;Clicked&#33;&#39;&#41;<br>
 				&#125;&#41;&#59;
 			</div>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -83,8 +107,9 @@
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<img src="#">
-			<ol>
+			<img src="http://placehold.it/400x65/444444/ffffff&text=placehold.it+image" />
+			
+			<ol class="paragraph-list">
 				<li>
 					<strong>Create HTML: </strong>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -95,7 +120,7 @@
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</li>
 				<li>
-					<strong>Make Pretty with CSS</strong>
+					<strong>Make Pretty with CSS:</strong>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -113,10 +138,93 @@
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</li>
 			</ol>
+			<span class="article-footer">
+				Posted by <strong>Author</strong> under <strong>Web > Dev</strong> on
+				<strong>January 13, 2014</strong>.
+			</span>
 		</article>
+		<h2>Comments</h2>
+		<form class="comment-form">
+			<fieldset>
+				<legend>User Info</legend>
+
+				<span>Email</span>
+				<input type="text" id="comment-email-input"><br/>
+
+				<span>Display Name</span>
+				<input type="text" id="comment-display-name-input"><br/>
+
+				<span>Website</span>
+				<input type="text" id="comment-website-input"><br/>
+			</fieldset>
+			<fieldset>
+				<legend>Comment</legend>
+				<textarea class="comment-content"></textarea>
+			</fieldset>
+			<a href="#" class="submit-button">Submit</a>
+		</form>
+		<div class="user-response">
+			<img src="http://placehold.it/50x50&text=U1" class="response-image" />
+			<div class="response-header">
+				<div class="response-author">User 1</div>
+				<div class="response-time">January 13, 2014</div>
+			</div>
+			<div class="response-content">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque perferendis ad magnam dolorum consectetur, id, velit commodi sapiente eaque consequuntur deserunt facilis nostrum repudiandae totam architecto error. Consequuntur, architecto, ipsum?
+			</div>
+			<div class="response-replies">
+				<div class="user-response">
+					<img src="http://placehold.it/50x50&text=U1" class="response-image" />
+					<div class="response-header">
+						<div class="response-author">User 1</div>
+						<div class="response-time">January 13, 2014</div>
+					</div>
+					<div class="response-content">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius aut quia sequi labore laboriosam aliquam magnam ea nam, libero ipsam facere dolore asperiores voluptate impedit quidem porro reiciendis minima. Illum.
+					</div>
+				</div>
+				<div class="user-response">
+					<img src="http://placehold.it/50x50&text=U3" class="response-image" />
+					<div class="response-header">
+						<div class="response-author">User 3</div>
+						<div class="response-time">January 13, 2014</div>
+					</div>
+					<div class="response-content">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ullam repellat repudiandae accusamus quod veritatis, asperiores excepturi necessitatibus qui consequatur culpa recusandae odit, animi hic velit, inventore quas, quo quia.
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="user-response">
+			<img src="http://placehold.it/50x50&text=U2" class="response-image" />
+			<div class="response-header">
+				<div class="response-author">User 2</div>
+				<div class="response-time">January 13, 2014</div>
+			</div>
+			<div class="response-content">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam autem nihil deserunt eaque iusto laborum odit quo cumque consequatur. Molestiae porro nemo quod nihil voluptatum hic, praesentium quaerat accusamus quis.
+			</div>
+		</div>
 	</div>
 	<nav class="nav-box">
-		
+		<ul>
+			<li>
+				<span class="nav-box-category">Recent Posts</span>
+				<ul>
+					<li class="nav-box-link"><a href="#">Another Post</a></li>
+					<li class="nav-box-link"><a href="#">A Cool Story</a></li>
+					<li class="nav-box-link"><a href="#">Useful Tips and Tricks</a></li>
+				</ul>
+			</li>
+			<li>
+				<span class="nav-box-category">Categories</span>
+				<ul>
+					<li class="nav-box-link"><a href="#">Web</a></li>
+					<li class="nav-box-link"><a href="#">Dev</a></li>
+					<li class="nav-box-link"><a href="#">CSS</a></li>
+				</ul>
+			</li>
+		</ul>
 	</nav>
 </body>
 </html>
