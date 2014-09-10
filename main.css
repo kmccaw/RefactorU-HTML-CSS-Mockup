@@ -270,3 +270,7 @@ ol.paragraph-list > li {
 	font-weight: lighter;
 	font-size: 0.85em;
 }
+
+.nav-box-link:hover a {
+	font-weight: bold;
+}
